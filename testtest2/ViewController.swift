@@ -17,7 +17,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("this is my first git hub")
     }
-
-
-}
+//test second update
+    func sum(){
+        
+    }
+ }
 
