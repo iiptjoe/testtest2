@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         myJeansInstance = JeansModel(jeansBrand: "Nudie Jeans", jeansTypeOfFabric: "Organic Cotton 12.75 oz Strecth Denim", jeansPocket: 5, jeansZipper: "zip Fly", jeansColor: "blue")
-        pantsInstance = pantsModel(jeansBrand: "Nudie Jeans", jeansTypeOfFabric: "Organic Cotton 12.75 oz Strecth Denim", jeansPocket: 5, jeansZipper: "zip Fly", jeansColor: "blue", pantPerk: "be cool")
+        pantsInstance = pantsModel(pantsBrand: "Nudie Jeans", pantsTypeOfFabric: "Organic Cotton 12.75 oz Strecth Denim", pantsPocket: 5, pantsZipper: "zip Fly", pantsColor: "blue", pantPerk: "be cool")
         updateUI()
         
     
