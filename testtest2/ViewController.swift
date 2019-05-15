@@ -9,17 +9,42 @@
 import UIKit
 
 class ViewController: UIViewController {
- /// asdasd
+    
+    @IBOutlet weak var jeansBrandLabel: UILabel!
+    @IBOutlet weak var jeansTypeOfFabricLabel: UILabel!
+    @IBOutlet weak var jeansPocketLabel: UILabel!
+    @IBOutlet weak var jeansZipperLabel: UILabel!
+    @IBOutlet weak var jeansColorLabel: UILabel!
+    
+    var myJeansInstance: JeansModel?
+    var pantsInstance: pantsModel
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // adasdasd
+        myJeansInstance = JeansModel(jeansBrand: "Nudie Jeans", jeansTypeOfFabric: "Organic Cotton 12.75 oz Strecth Denim", jeansPocket: 5, jeansZipper: "zip Fly", jeansColor: "blue")
+        pantsInstance = pantsModel(jeansBrand: "Nudie Jeans", jeansTypeOfFabric: "Organic Cotton 12.75 oz Strecth Denim", jeansPocket: 5, jeansZipper: "zip Fly", jeansColor: "blue", pantPerk: "be cool")
+        updateUI()
         
-        // Do any additional setup after loading the view.
-        print("this is my first git hub")
+    
     }
-//test second update
-    func sum(){
-        
+    
+    func updateUI() {
+        if let instanceJeans = myJeansInstance {
+            jeansBrandLabel.text = instanceJeans.brand
+            jeansTypeOfFabricLabel.text = instanceJeans.typeOfFabric
+            jeansPocketLabel.text = "\(instanceJeans.pocket)"
+            jeansZipperLabel.text = instanceJeans.zipper
+            jeansColorLabel.text = instanceJeans.color
+
+        }
     }
- }
+    
+    @IBAction func increasePocketButton(_ sender: Any) {
+        if let instance = myJeansInstance {
+            instance.increasePacket()
+            updateUI()
+        }
+    }
+}
 

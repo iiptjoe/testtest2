@@ -12,6 +12,8 @@
 		A3CD2143228B9FC100873D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CD2141228B9FC100873D70 /* Main.storyboard */; };
 		A3CD2145228B9FC200873D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CD2144228B9FC200873D70 /* Assets.xcassets */; };
 		A3CD2148228B9FC200873D70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CD2146228B9FC200873D70 /* LaunchScreen.storyboard */; };
+		A3CD2150228BA89C00873D70 /* JeansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD214F228BA89C00873D70 /* JeansModel.swift */; };
+		A3CD2152228BC4EC00873D70 /* FacilitatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD2151228BC4EC00873D70 /* FacilitatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A3CD2144228B9FC200873D70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3CD2147228B9FC200873D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3CD2149228B9FC200873D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CD214F228BA89C00873D70 /* JeansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeansModel.swift; sourceTree = "<group>"; };
+		A3CD2151228BC4EC00873D70 /* FacilitatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				A3CD213D228B9FC100873D70 /* AppDelegate.swift */,
 				A3CD213F228B9FC100873D70 /* ViewController.swift */,
+				A3CD214F228BA89C00873D70 /* JeansModel.swift */,
+				A3CD2151228BC4EC00873D70 /* FacilitatorModel.swift */,
 				A3CD2141228B9FC100873D70 /* Main.storyboard */,
 				A3CD2144228B9FC200873D70 /* Assets.xcassets */,
 				A3CD2146228B9FC200873D70 /* LaunchScreen.storyboard */,
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3CD2152228BC4EC00873D70 /* FacilitatorModel.swift in Sources */,
+				A3CD2150228BA89C00873D70 /* JeansModel.swift in Sources */,
 				A3CD2140228B9FC100873D70 /* ViewController.swift in Sources */,
 				A3CD213E228B9FC100873D70 /* AppDelegate.swift in Sources */,
 			);
